@@ -32,15 +32,13 @@
     .jobs label { display:flex; align-items:center; gap:6px; background:#0f1628; padding:6px 8px; border-radius:8px; border:1px solid #1f2a44; font-size:12px; }
     .level input { width:120px; padding:8px 10px; border-radius:8px; border:1px solid #1f2a44; background:#0f1628; color:var(--ink); }
     .hint { color:#7f90b5; font-size:12px; }
-    .logrow td { background:#0e233d; color:#b9d3ff; font-style:italic; border-top:2px solid #27466f; border-bottom:2px solid #27466f; }
-    .ghost { opacity:0.75; }
   </style>
 </head>
 <body>
   <header>
     <h1>ChronoStory 裝備資料（互動版）</h1>
     <div class="meta">
-      主資料表：ChronosStory-掉落物查詢　|　追加表：Chronostory - torice-snowball　|　欄位數：15　|　主表筆數：3551
+      資料表：ChronosStory-掉落物查詢　|　欄位數：15　|　筆數：3583
     </div>
     <div class="bar">
       <input id="q" type="text" placeholder="關鍵字搜尋（可同時比對多欄位，例如：'斧 70 等級'）" />
@@ -66,9 +64,9 @@
           <input id="lvlMin" type="number" placeholder="最低等級" min="0" />
           <input id="lvlMax" type="number" placeholder="最高等級" min="0" />
         </div>
-        <div class="hint ghost">未勾「全職業」時不顯示全職業裝備；其他職業採交集。</div>
+        <div class="hint">未勾「全職業」時不顯示全職業裝備；其他職業採交集。</div>
       </div>
-      <!-- 注意：搜尋/重製按鈕獨立存在，不會被隱藏 -->
+      <!-- 搜尋/重製按鈕獨立存在，不會被隱藏 -->
       <button class="btn" id="applyBtn">搜尋</button>
       <button class="btn" id="resetAllBtn">重製</button>
     </div>
@@ -136,7 +134,9 @@
             <td title="全職業">全職業</td>
             <td title="5.0">5.0</td>
             <td title=""></td>
-            <td title="防禦力:+5(+3~+7)可使用卷軸:7">防禦力:+5(+3~+7)可使用卷軸:7</td>
+            <td title="防禦力:+5(+3~+7)
+可使用卷軸:7">防禦力:+5(+3~+7)
+可使用卷軸:7</td>
           </tr>
           <tr>
             <td title="True" style="display:none">True</td>
@@ -170,7 +170,9 @@
             <td title="海盜">海盜</td>
             <td title="10.0">10.0</td>
             <td title=""></td>
-            <td title="防禦力:+15(+5~+25)可使用卷軸:10">防禦力:+15(+5~+25)可使用卷軸:10</td>
+            <td title="防禦力:+15(+5~+25)
+可使用卷軸:10">防禦力:+15(+5~+25)
+可使用卷軸:10</td>
           </tr>
           <tr>
             <td title="True" style="display:none">True</td>
@@ -1341,7 +1343,9 @@ MaxMP:+3(+0~+11)
             <td title="18.0">18.0</td>
             <td title="INT:55">INT:55</td>
             <td title="攻擊力:+21(+20~+22)
+魔法攻擊:+33(+32~+34)
 可使用卷軸:7">攻擊力:+21(+20~+22)
+魔法攻擊:+33(+32~+34)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -2839,7 +2843,9 @@ MaxMP:+5(+0~+11)
             <td title="10.0">10.0</td>
             <td title="INT:32">INT:32</td>
             <td title="攻擊力:+20(+20~+20)
+魔法攻擊:+25(+25~+25)
 可使用卷軸:7">攻擊力:+20(+20~+20)
+魔法攻擊:+25(+25~+25)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -3600,7 +3606,9 @@ MaxHP:+5(+0~+13)
             <td title="33.0">33.0</td>
             <td title="INT:100">INT:100</td>
             <td title="攻擊力:+30(+28~+32)
+魔法攻擊:+48(+46~+50)
 可使用卷軸:7">攻擊力:+30(+28~+32)
+魔法攻擊:+48(+46~+50)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -3619,7 +3627,9 @@ MaxHP:+5(+0~+13)
             <td title="20.0">20.0</td>
             <td title="INT:62">INT:62</td>
             <td title="攻擊力:+26(+25~+27)
+魔法攻擊:+35(+34~+36)
 可使用卷軸:7">攻擊力:+26(+25~+27)
+魔法攻擊:+35(+34~+36)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -8762,7 +8772,9 @@ MaxHP:+5(+0~+15)
             <td title="25.0">25.0</td>
             <td title="INT:78">INT:78</td>
             <td title="攻擊力:+29(+28~+30)
+魔法攻擊:+40(+39~+41)
 可使用卷軸:7">攻擊力:+29(+28~+30)
+魔法攻擊:+40(+39~+41)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -9957,7 +9969,9 @@ MaxHP:+10(+0~+25)
             <td title="28.0">28.0</td>
             <td title="INT:85">INT:85</td>
             <td title="攻擊力:+27(+26~+28)
+魔法攻擊:+43(+42~+44)
 可使用卷軸:7">攻擊力:+27(+26~+28)
+魔法攻擊:+43(+42~+44)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -10689,7 +10703,9 @@ MaxMP:+2(+0~+12)
             <td title="30.0">30.0</td>
             <td title="INT:92">INT:92</td>
             <td title="攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7">攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -11646,7 +11662,9 @@ MaxMP:+5(+0~+15)
             <td title="23.0">23.0</td>
             <td title="INT:70">INT:70</td>
             <td title="攻擊力:+24(+23~+25)
+魔法攻擊:+38(+37~+39)
 可使用卷軸:7">攻擊力:+24(+23~+25)
+魔法攻擊:+38(+37~+39)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -13242,7 +13260,9 @@ MaxMP:+5(+0~+23)
             <td title="35.0">35.0</td>
             <td title="INT:108">INT:108</td>
             <td title="攻擊力:+35(+33~+37)
+魔法攻擊:+50(+48~+52)
 可使用卷軸:7">攻擊力:+35(+33~+37)
+魔法攻擊:+50(+48~+52)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -14460,7 +14480,9 @@ MaxMP:+10(+0~+25)
             <td title="28.0">28.0</td>
             <td title="INT:85">INT:85</td>
             <td title="攻擊力:+27(+26~+28)
+魔法攻擊:+43(+42~+44)
 可使用卷軸:7">攻擊力:+27(+26~+28)
+魔法攻擊:+43(+42~+44)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -14479,7 +14501,9 @@ MaxMP:+10(+0~+25)
             <td title="38.0">38.0</td>
             <td title="INT:115">INT:115</td>
             <td title="攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7">攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -19663,7 +19687,9 @@ MaxMP:+5(+0~+25)
             <td title="30.0">30.0</td>
             <td title="INT:92">INT:92</td>
             <td title="攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7">攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -21191,7 +21217,9 @@ MaxMP:+10(+0~+30)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -23484,7 +23512,9 @@ MaxMP:+10(+0~+30)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -25078,7 +25108,9 @@ MaxMP:+10(+0~+30)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -25573,7 +25605,9 @@ MaxMP:+10(+0~+30)
             <td title="40.0">40.0</td>
             <td title="INT:123">INT:123</td>
             <td title="攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7">攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -27737,7 +27771,9 @@ MaxMP:+20(+0~+40)
             <td title="40.0">40.0</td>
             <td title="INT:123">INT:123</td>
             <td title="攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7">攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -31822,7 +31858,9 @@ MaxMP:+15(+0~+40)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -32448,7 +32486,9 @@ MaxMP:+20(+0~+45)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -33184,7 +33224,9 @@ MaxMP:+5(+0~+25)
             <td title="38.0">38.0</td>
             <td title="INT:115">INT:115</td>
             <td title="攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7">攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -33777,7 +33819,9 @@ MaxMP:+30(+0~+60)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -34319,7 +34363,9 @@ MaxHP:+10(+0~+70)
             <td title="40.0">40.0</td>
             <td title="INT:123">INT:123</td>
             <td title="攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7">攻擊力:+38(+36~+40)
+魔法攻擊:+55(+53~+57)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -35411,7 +35457,9 @@ MaxMP:+15(+0~+45)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -36090,7 +36138,9 @@ MaxMP:+10(+0~+30)
             <td title="48.0">48.0</td>
             <td title="INT:145">INT:145</td>
             <td title="攻擊力:+39(+37~+41)
+魔法攻擊:+63(+61~+65)
 可使用卷軸:7">攻擊力:+39(+37~+41)
+魔法攻擊:+63(+61~+65)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -36352,8 +36402,10 @@ MaxMP:+10(+0~+30)
             <td title="法師">法師</td>
             <td title="40.0">40.0</td>
             <td title="INT:128">INT:128</td>
-            <td title="防禦力:+18(+0~+38)
-可使用卷軸:7">防禦力:+18(+0~+38)
+            <td title="魔法攻擊:+2(+0~+4)
+防禦力:+18(+0~+38)
+可使用卷軸:7">魔法攻擊:+2(+0~+4)
+防禦力:+18(+0~+38)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -38063,7 +38115,9 @@ MaxMP:+15(+0~+45)
             <td title="58.0">58.0</td>
             <td title="INT:175">INT:175</td>
             <td title="攻擊力:+45(+42~+48)
+魔法攻擊:+73(+70~+76)
 可使用卷軸:7">攻擊力:+45(+42~+48)
+魔法攻擊:+73(+70~+76)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -39160,7 +39214,9 @@ MaxMP:+30(+0~+98)
             <td title="68.0">68.0</td>
             <td title="INT:205">INT:205</td>
             <td title="攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7">攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -39533,10 +39589,12 @@ MaxHP:+10(+0~+80)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+2(+0~+6)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+2(+0~+6)
 幸運:+2(+0~+6)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+2(+0~+6)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+2(+0~+6)
 幸運:+2(+0~+6)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -39709,7 +39767,9 @@ MaxHP:+10(+0~+80)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -42206,7 +42266,9 @@ MaxMP:+30(+0~+60)
             <td title="48.0">48.0</td>
             <td title="INT:145">INT:145</td>
             <td title="攻擊力:+39(+37~+41)
+魔法攻擊:+63(+61~+65)
 可使用卷軸:7">攻擊力:+39(+37~+41)
+魔法攻擊:+63(+61~+65)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -42225,7 +42287,9 @@ MaxMP:+30(+0~+60)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -43295,7 +43359,9 @@ MaxHP:+5(+0~+23)
             <td title="30.0">30.0</td>
             <td title="INT:92">INT:92</td>
             <td title="攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7">攻擊力:+30(+28~+32)
+魔法攻擊:+44(+42~+46)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -44044,7 +44110,15 @@ MaxMP:+10(+0~+30)
             <td title="法師">法師</td>
             <td title="48.0">48.0</td>
             <td title=""></td>
-            <td title=""></td>
+            <td title="智力:+4(+0~+9)
+幸運:+1(+0~+6)
+防禦力:+44(+0~+92)
+MaxMP:+20(+0~+68)
+可使用卷軸:10">智力:+4(+0~+9)
+幸運:+1(+0~+6)
+防禦力:+44(+0~+92)
+MaxMP:+20(+0~+68)
+可使用卷軸:10</td>
           </tr>
           <tr>
             <td title="True" style="display:none">True</td>
@@ -44261,7 +44335,9 @@ MaxMP:+15(+0~+45)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -45240,10 +45316,12 @@ MaxMP:+10(+0~+30)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+3(+0~+7)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+3(+0~+7)
 幸運:+1(+0~+5)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+3(+0~+7)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+3(+0~+7)
 幸運:+1(+0~+5)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -45422,7 +45500,9 @@ MaxMP:+10(+0~+30)
             <td title="38.0">38.0</td>
             <td title="INT:115">INT:115</td>
             <td title="攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7">攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -45441,7 +45521,9 @@ MaxMP:+10(+0~+30)
             <td title="58.0">58.0</td>
             <td title="INT:175">INT:175</td>
             <td title="攻擊力:+45(+42~+48)
+魔法攻擊:+73(+70~+76)
 可使用卷軸:7">攻擊力:+45(+42~+48)
+魔法攻擊:+73(+70~+76)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -45838,7 +45920,9 @@ MaxMP:+10(+0~+30)
             <td title="38.0">38.0</td>
             <td title="INT:115">INT:115</td>
             <td title="攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7">攻擊力:+33(+31~+35)
+魔法攻擊:+53(+51~+55)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -45857,7 +45941,9 @@ MaxMP:+10(+0~+30)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -46514,10 +46600,12 @@ MaxMP:+20(+0~+68)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+1(+0~+5)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+1(+0~+5)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -47109,10 +47197,12 @@ MaxMP:+20(+0~+68)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+1(+0~+5)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+1(+0~+5)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -47533,7 +47623,9 @@ MaxMP:+20(+0~+68)
             <td title="68.0">68.0</td>
             <td title="INT:205">INT:205</td>
             <td title="攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7">攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -47552,7 +47644,9 @@ MaxMP:+20(+0~+68)
             <td title="75.0">75.0</td>
             <td title="INT:228">INT:228</td>
             <td title="攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7">攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -48756,7 +48850,9 @@ MaxMP:+15(+0~+45)
             <td title="55.0">55.0</td>
             <td title="INT:168">INT:168</td>
             <td title="攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7">攻擊力:+47(+44~+50)
+魔法攻擊:+70(+67~+73)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -49432,7 +49528,9 @@ MaxMP:+30(+0~+60)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -50061,7 +50159,9 @@ MaxMP:+30(+0~+60)
             <td title="45.0">45.0</td>
             <td title="INT:138">INT:138</td>
             <td title="攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7">攻擊力:+41(+39~+43)
+魔法攻擊:+60(+58~+62)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -51179,10 +51279,12 @@ MaxMP:+10(+0~+30)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+2(+0~+6)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+2(+0~+6)
 幸運:+2(+0~+6)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+2(+0~+6)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+2(+0~+6)
 幸運:+2(+0~+6)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -51951,7 +52053,9 @@ MaxMP:+10(+0~+50)
             <td title="68.0">68.0</td>
             <td title="INT:205">INT:205</td>
             <td title="攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7">攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -53327,10 +53431,12 @@ MaxMP:+25(+0~+95)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+1(+0~+5)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+1(+0~+5)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -53414,7 +53520,9 @@ MaxMP:+25(+0~+95)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -54021,10 +54129,12 @@ MaxMP:+25(+0~+95)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+1(+0~+5)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+1(+0~+5)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -54108,7 +54218,9 @@ MaxMP:+25(+0~+95)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -54715,10 +54827,12 @@ MaxMP:+25(+0~+95)
             <td title="法師">法師</td>
             <td title="70.0">70.0</td>
             <td title="INT:218">INT:218</td>
-            <td title="智力:+1(+0~+5)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
-可使用卷軸:5">智力:+1(+0~+5)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+1(+0~+5)
 幸運:+3(+0~+7)
 防禦力:+27(+0~+62)
 可使用卷軸:5</td>
@@ -54802,7 +54916,9 @@ MaxMP:+25(+0~+95)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -58234,7 +58350,9 @@ MaxMP:+10(+0~+50)
             <td title="75.0">75.0</td>
             <td title="INT:228">INT:228</td>
             <td title="攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7">攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -58955,7 +59073,9 @@ MaxMP:+25(+0~+95)
             <td title="75.0">75.0</td>
             <td title="INT:228">INT:228</td>
             <td title="攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7">攻擊力:+59(+55~+63)
+魔法攻擊:+90(+86~+94)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -61914,7 +62034,9 @@ MaxMP:+30(+0~+110)
             <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7">攻擊力:+53(+50~+56)
+魔法攻擊:+80(+77~+83)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -63408,7 +63530,15 @@ MaxMP:+20(+0~+68)
             <td title="法師">法師</td>
             <td title="48.0">48.0</td>
             <td title=""></td>
-            <td title=""></td>
+            <td title="智力:+4(+0~+9)
+幸運:+1(+0~+6)
+防禦力:+44(+0~+92)
+MaxMP:+20(+0~+68)
+可使用卷軸:10">智力:+4(+0~+9)
+幸運:+1(+0~+6)
+防禦力:+44(+0~+92)
+MaxMP:+20(+0~+68)
+可使用卷軸:10</td>
           </tr>
           <tr>
             <td title="True" style="display:none">True</td>
@@ -64889,10 +65019,12 @@ MaxMP:+40(+0~+128)
             <td title="法師">法師</td>
             <td title="90.0">90.0</td>
             <td title="INT:278">INT:278</td>
-            <td title="智力:+4(+0~+8)
+            <td title="魔法攻擊:+1(+0~+5)
+智力:+4(+0~+8)
 幸運:+1(+0~+5)
 防禦力:+35(+0~+80)
-可使用卷軸:5">智力:+4(+0~+8)
+可使用卷軸:5">魔法攻擊:+1(+0~+5)
+智力:+4(+0~+8)
 幸運:+1(+0~+5)
 防禦力:+35(+0~+80)
 可使用卷軸:5</td>
@@ -66671,7 +66803,9 @@ MaxMP:+5(+0~+23)
             <td title="68.0">68.0</td>
             <td title="INT:205">INT:205</td>
             <td title="攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7">攻擊力:+51(+48~+54)
+魔法攻擊:+83(+80~+86)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -66690,7 +66824,9 @@ MaxMP:+5(+0~+23)
             <td title="78.0">78.0</td>
             <td title="INT:235">INT:235</td>
             <td title="攻擊力:+57(+53~+61)
+魔法攻擊:+93(+89~+97)
 可使用卷軸:7">攻擊力:+57(+53~+61)
+魔法攻擊:+93(+89~+97)
 可使用卷軸:7</td>
           </tr>
           <tr>
@@ -68687,7 +68823,6 @@ MaxMP:+20(+0~+45)
             <td title=""></td>
             <td title=""></td>
           </tr>
-          <tr class="logrow"><td colspan="15">▼ Snowball 追加開始（2025-10-17 09:10:20）</td></tr>
           <tr>
             <td title="True" style="display:none">True</td>
             <td title="9834178" style="display:none">9834178</td>
@@ -68697,7 +68832,7 @@ MaxMP:+20(+0~+45)
             <td title="0" style="display:none">0</td>
             <td title="楓幣(Meso)">楓幣(Meso)</td>
             <td title="400000" style="display:none">400000</td>
-            <td title="0.4">0.4</td>
+            <td title="40.00%">40.00%</td>
             <td title="329" style="display:none">329</td>
             <td title="482" style="display:none">482</td>
             <td title=""></td>
@@ -68714,7 +68849,7 @@ MaxMP:+20(+0~+45)
             <td title="4000050" style="display:none">4000050</td>
             <td title="企鵝王的嘴(Pepe Beak)">企鵝王的嘴(Pepe Beak)</td>
             <td title="300000" style="display:none">300000</td>
-            <td title="0.3">0.3</td>
+            <td title="30.00%">30.00%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -68731,11 +68866,11 @@ MaxMP:+20(+0~+45)
             <td title="1002209" style="display:none">1002209</td>
             <td title="綠黑太陽帽(Green Sonata)">綠黑太陽帽(Green Sonata)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="50">50</td>
+            <td title="50.0">50.0</td>
             <td title="DEX:90, LUK:140">DEX:90, LUK:140</td>
             <td title="敏捷:+3(+0~+8)
 防禦力:+33(+8~+58)
@@ -68752,11 +68887,11 @@ MaxMP:+20(+0~+45)
             <td title="1002210" style="display:none">1002210</td>
             <td title="黃黑太陽帽(Brown Sonata)">黃黑太陽帽(Brown Sonata)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="50">50</td>
+            <td title="50.0">50.0</td>
             <td title="DEX:90, LUK:140">DEX:90, LUK:140</td>
             <td title="幸運:+3(+0~+8)
 防禦力:+33(+8~+58)
@@ -68773,11 +68908,11 @@ MaxMP:+20(+0~+45)
             <td title="1002249" style="display:none">1002249</td>
             <td title="黑忍者頭巾(Dark Identity)">黑忍者頭巾(Dark Identity)</td>
             <td title="700" style="display:none">700</td>
-            <td title="0.0007">0.0007</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="60">60</td>
+            <td title="60.0">60.0</td>
             <td title="DEX:100, LUK:170">DEX:100, LUK:170</td>
             <td title="幸運:+4(+0~+10)
 防禦力:+39(+9~+69)
@@ -68794,11 +68929,11 @@ MaxMP:+20(+0~+45)
             <td title="1032011" style="display:none">1032011</td>
             <td title="藍月耳環(Blue Moon)">藍月耳環(Blue Moon)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="全職業">全職業</td>
-            <td title="40">40</td>
+            <td title="40.0">40.0</td>
             <td title=""></td>
             <td title="可使用卷軸:5">可使用卷軸:5</td>
           </tr>
@@ -68811,11 +68946,11 @@ MaxMP:+20(+0~+45)
             <td title="1040084" style="display:none">1040084</td>
             <td title="黑暗之影(Dark Shadow)">黑暗之影(Dark Shadow)</td>
             <td title="700" style="display:none">700</td>
-            <td title="0.0007">0.0007</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="40">40</td>
+            <td title="40.0">40.0</td>
             <td title="DEX:80, LUK:110">DEX:80, LUK:110</td>
             <td title="幸運:+3(+0~+7)
 防禦力:+34(+14~+54)
@@ -68834,11 +68969,11 @@ MaxMP:+10(+0~+30)
             <td title="1040109" style="display:none">1040109</td>
             <td title="紅隱者之服(Red Pirate Top)">紅隱者之服(Red Pirate Top)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="80">80</td>
+            <td title="80.0">80.0</td>
             <td title="DEX:120, LUK:220">DEX:120, LUK:220</td>
             <td title="敏捷:+1(+0~+5)
 幸運:+5(+1~+9)
@@ -68859,11 +68994,11 @@ MaxMP:+15(+0~+55)
             <td title="1041068" style="display:none">1041068</td>
             <td title="黑守護之服(Dark Legolia)">黑守護之服(Dark Legolia)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="弓箭手">弓箭手</td>
-            <td title="35">35</td>
+            <td title="35.0">35.0</td>
             <td title="DEX:115">DEX:115</td>
             <td title="敏捷:+3(+0~+7)
 防禦力:+30(+12~+48)
@@ -68880,11 +69015,11 @@ MaxMP:+15(+0~+55)
             <td title="1041076" style="display:none">1041076</td>
             <td title="深夜之影(Dark Shadow)">深夜之影(Dark Shadow)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="40">40</td>
+            <td title="40.0">40.0</td>
             <td title="DEX:80, LUK:110">DEX:80, LUK:110</td>
             <td title="幸運:+3(+0~+7)
 防禦力:+34(+14~+54)
@@ -68903,11 +69038,11 @@ MaxMP:+10(+0~+30)
             <td title="1051030" style="display:none">1051030</td>
             <td title="黑妖精禮服(Dark Calaf)">黑妖精禮服(Dark Calaf)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="48">48</td>
+            <td title="48.0">48.0</td>
             <td title="INT:145">INT:145</td>
             <td title="智力:+4(+0~+9)
 幸運:+1(+0~+6)
@@ -68928,11 +69063,11 @@ MaxMP:+20(+0~+68)
             <td title="1051031" style="display:none">1051031</td>
             <td title="白妖精禮服(White Calaf)">白妖精禮服(White Calaf)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="48">48</td>
+            <td title="48.0">48.0</td>
             <td title="INT:145">INT:145</td>
             <td title="智力:+4(+0~+9)
 幸運:+1(+0~+6)
@@ -68953,11 +69088,11 @@ MaxMP:+20(+0~+68)
             <td title="1051034" style="display:none">1051034</td>
             <td title="朱紅妖精禮服(Orange Calaf)">朱紅妖精禮服(Orange Calaf)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="48">48</td>
+            <td title="48.0">48.0</td>
             <td title="INT:145">INT:145</td>
             <td title="智力:+4(+0~+9)
 幸運:+1(+0~+6)
@@ -68978,11 +69113,11 @@ MaxMP:+20(+0~+68)
             <td title="1051046" style="display:none">1051046</td>
             <td title="白聖黨之服(White Anakarune)">白聖黨之服(White Anakarune)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="58">58</td>
+            <td title="58.0">58.0</td>
             <td title="INT:175">INT:175</td>
             <td title="智力:+5(+0~+11)
 幸運:+1(+0~+7)
@@ -69003,11 +69138,11 @@ MaxMP:+25(+0~+83)
             <td title="1051047" style="display:none">1051047</td>
             <td title="黑聖黨之服(Dark Anakarune)">黑聖黨之服(Dark Anakarune)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="58">58</td>
+            <td title="58.0">58.0</td>
             <td title="INT:175">INT:175</td>
             <td title="智力:+5(+0~+11)
 幸運:+1(+0~+7)
@@ -69028,11 +69163,11 @@ MaxMP:+25(+0~+83)
             <td title="1060073" style="display:none">1060073</td>
             <td title="黑暗之褲(Dark Shadow Pants)">黑暗之褲(Dark Shadow Pants)</td>
             <td title="700" style="display:none">700</td>
-            <td title="0.0007">0.0007</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="40">40</td>
+            <td title="40.0">40.0</td>
             <td title="DEX:80, LUK:110">DEX:80, LUK:110</td>
             <td title="幸運:+1(+0~+5)
 防禦力:+27(+7~+47)
@@ -69051,11 +69186,11 @@ MaxMP:+10(+0~+30)
             <td title="1060098" style="display:none">1060098</td>
             <td title="紅隱者之褲(Red Pirate Pants)">紅隱者之褲(Red Pirate Pants)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="80">80</td>
+            <td title="80.0">80.0</td>
             <td title="DEX:120, LUK:220">DEX:120, LUK:220</td>
             <td title="敏捷:+1(+0~+5)
 幸運:+3(+0~+7)
@@ -69074,11 +69209,11 @@ MaxMP:+10(+0~+30)
             <td title="1061063" style="display:none">1061063</td>
             <td title="黑守護褲(Dark Legolia Pants)">黑守護褲(Dark Legolia Pants)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="弓箭手">弓箭手</td>
-            <td title="35">35</td>
+            <td title="35.0">35.0</td>
             <td title="DEX:115">DEX:115</td>
             <td title="敏捷:+1(+0~+5)
 防禦力:+24(+6~+42)
@@ -69097,11 +69232,11 @@ MaxMP:+5(+0~+23)
             <td title="1061071" style="display:none">1061071</td>
             <td title="黑暗之褲(Dark Shadow Pants)">黑暗之褲(Dark Shadow Pants)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
-            <td title="40">40</td>
+            <td title="40.0">40.0</td>
             <td title="DEX:80, LUK:110">DEX:80, LUK:110</td>
             <td title="幸運:+1(+0~+5)
 防禦力:+27(+7~+47)
@@ -69120,11 +69255,11 @@ MaxMP:+10(+0~+30)
             <td title="1102017" style="display:none">1102017</td>
             <td title="白色魔法披風(White Magic Cape)">白色魔法披風(White Magic Cape)</td>
             <td title="2000" style="display:none">2000</td>
-            <td title="0.002">0.002</td>
+            <td title="0.20%">0.20%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="全職業">全職業</td>
-            <td title="60">60</td>
+            <td title="60.0">60.0</td>
             <td title=""></td>
             <td title="防禦力:+16(+0~+46)
 可使用卷軸:5">防禦力:+16(+0~+46)
@@ -69139,7 +69274,7 @@ MaxMP:+10(+0~+30)
             <td title="1203002" style="display:none">1203002</td>
             <td title="雪球(Snowball)">雪球(Snowball)</td>
             <td title="400" style="display:none">400</td>
-            <td title="0.0004">0.0004</td>
+            <td title="0.04%">0.04%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="盜賊">盜賊</td>
@@ -69156,11 +69291,11 @@ MaxMP:+10(+0~+30)
             <td title="1312008" style="display:none">1312008</td>
             <td title="樹靈之斧(Buck)">樹靈之斧(Buck)</td>
             <td title="1800" style="display:none">1800</td>
-            <td title="0.0018">0.0018</td>
+            <td title="0.18%">0.18%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="劍士">劍士</td>
-            <td title="50">50</td>
+            <td title="50.0">50.0</td>
             <td title="STR:155">STR:155</td>
             <td title="攻擊力:+73(+71~+75)
 可使用卷軸:7">攻擊力:+73(+71~+75)
@@ -69175,11 +69310,11 @@ MaxMP:+10(+0~+30)
             <td title="1382007" style="display:none">1382007</td>
             <td title="魔靈之翼(Evil Wings)">魔靈之翼(Evil Wings)</td>
             <td title="700" style="display:none">700</td>
-            <td title="0.0007">0.0007</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="法師">法師</td>
-            <td title="65">65</td>
+            <td title="65.0">65.0</td>
             <td title="INT:198">INT:198</td>
             <td title="攻擊力:+53(+50~+56)
 魔法攻擊:+80(+77~+83)
@@ -69196,11 +69331,11 @@ MaxMP:+10(+0~+30)
             <td title="1432003" style="display:none">1432003</td>
             <td title="刺槍(Nakamaki)">刺槍(Nakamaki)</td>
             <td title="700" style="display:none">700</td>
-            <td title="0.0007">0.0007</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="劍士">劍士</td>
-            <td title="35">35</td>
+            <td title="35.0">35.0</td>
             <td title="STR:115">STR:115</td>
             <td title="攻擊力:+57(+55~+59)
 可使用卷軸:7">攻擊力:+57(+55~+59)
@@ -69215,11 +69350,11 @@ MaxMP:+10(+0~+30)
             <td title="1452008" style="display:none">1452008</td>
             <td title="天弓(Olympus)">天弓(Olympus)</td>
             <td title="1287" style="display:none">1287</td>
-            <td title="0.001287">0.001287</td>
+            <td title="0.13%">0.13%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="弓箭手">弓箭手</td>
-            <td title="50">50</td>
+            <td title="50.0">50.0</td>
             <td title="STR:55, DEX:160">STR:55, DEX:160</td>
             <td title="攻擊力:+65(+63~+67)
 可使用卷軸:7">攻擊力:+65(+63~+67)
@@ -69234,11 +69369,11 @@ MaxMP:+10(+0~+30)
             <td title="1492001" style="display:none">1492001</td>
             <td title="迪林格火槍(Dellinger Special)">迪林格火槍(Dellinger Special)</td>
             <td title="3000" style="display:none">3000</td>
-            <td title="0.003">0.003</td>
+            <td title="0.30%">0.30%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title="海盜">海盜</td>
-            <td title="15">15</td>
+            <td title="15.0">15.0</td>
             <td title="STR:15, DEX:25">STR:15, DEX:25</td>
             <td title="攻擊力:+18(+17~+19)
 可使用卷軸:7">攻擊力:+18(+17~+19)
@@ -69253,7 +69388,7 @@ MaxMP:+10(+0~+30)
             <td title="2000006" style="display:none">2000006</td>
             <td title="活力藥水(Mana Elixir)">活力藥水(Mana Elixir)</td>
             <td title="40000" style="display:none">40000</td>
-            <td title="0.04">0.04</td>
+            <td title="4.00%">4.00%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69270,7 +69405,7 @@ MaxMP:+10(+0~+30)
             <td title="2020028" style="display:none">2020028</td>
             <td title="巧克力(Chocolate)">巧克力(Chocolate)</td>
             <td title="20000" style="display:none">20000</td>
-            <td title="0.02">0.02</td>
+            <td title="2.00%">2.00%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69287,7 +69422,7 @@ MaxMP:+10(+0~+30)
             <td title="2041016" style="display:none">2041016</td>
             <td title="披風智力卷軸60%(Scroll for Cape for INT 60%)">披風智力卷軸60%(Scroll for Cape for INT 60%)</td>
             <td title="750" style="display:none">750</td>
-            <td title="0.00075">0.00075</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69304,7 +69439,7 @@ MaxMP:+10(+0~+30)
             <td title="2041013" style="display:none">2041013</td>
             <td title="披風力量卷軸60%(Scroll for Cape for STR 60%)">披風力量卷軸60%(Scroll for Cape for STR 60%)</td>
             <td title="750" style="display:none">750</td>
-            <td title="0.00075">0.00075</td>
+            <td title="0.07%">0.07%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69321,7 +69456,7 @@ MaxMP:+10(+0~+30)
             <td title="4010006" style="display:none">4010006</td>
             <td title="黃金母礦(Gold Ore)">黃金母礦(Gold Ore)</td>
             <td title="300" style="display:none">300</td>
-            <td title="0.0003">0.0003</td>
+            <td title="0.03%">0.03%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69338,7 +69473,7 @@ MaxMP:+10(+0~+30)
             <td title="4020008" style="display:none">4020008</td>
             <td title="黑水晶母礦(Black Crystal Ore)">黑水晶母礦(Black Crystal Ore)</td>
             <td title="300" style="display:none">300</td>
-            <td title="0.0003">0.0003</td>
+            <td title="0.03%">0.03%</td>
             <td title="1" style="display:none">1</td>
             <td title="1" style="display:none">1</td>
             <td title=""></td>
@@ -69346,7 +69481,6 @@ MaxMP:+10(+0~+30)
             <td title=""></td>
             <td title=""></td>
           </tr>
-          <tr class="logrow"><td colspan="15">▲ Snowball 追加結束（2025-10-17 09:10:20）</td></tr>
         </tbody>
       </table>
     </div>
@@ -69354,7 +69488,6 @@ MaxMP:+10(+0~+30)
 
   <script>
     (function () {
-      // ====== Utilities ======
       const table = document.getElementById('grid');
       const thead = table.tHead;
       const tbody = table.tBodies[0];
@@ -69378,13 +69511,11 @@ MaxMP:+10(+0~+30)
         }
         return -1;
       }
-
       const COL_APPLY = colIndexByName('ApplicableJobs');
       const COL_LEVEL = colIndexByName('RequiredLevel');
 
       updateCount();
 
-      // ====== Column toggles ======
       const headers = Array.from(thead.rows[0].cells).map((th, idx) => ({
         name: th.dataset.col,
         idx,
@@ -69411,7 +69542,6 @@ MaxMP:+10(+0~+30)
         });
       }
 
-      // ====== Search & Filters ======
       function getSelectedJobs() {
         return Array.from(jobFilters.querySelectorAll('input[type=checkbox]:checked')).map(
           (cb) => cb.value
@@ -69426,7 +69556,6 @@ MaxMP:+10(+0~+30)
         return true;
       }
 
-      // 「全職業」僅在勾選時顯示
       function jobsMatch(applyStr, selected) {
         if (selected.length === 0) return true;
         const s = (applyStr || '').toLowerCase();
@@ -69437,7 +69566,6 @@ MaxMP:+10(+0~+30)
         return selected.every((j) => s.includes(j.toLowerCase()));
       }
 
-      // 文字搜尋（即時）
       function applyTextSearchOnly() {
         const terms = q.value.toLowerCase().split(/\s+/).filter(Boolean);
         Array.from(tbody.rows).forEach((tr) => {
@@ -69449,7 +69577,6 @@ MaxMP:+10(+0~+30)
         updateCount();
       }
 
-      // 裝備條件（按鈕觸發）
       function applyEquipmentFilters() {
         const selectedJobs = getSelectedJobs();
         const min = parseFloat(lvlMin.value);
@@ -69467,7 +69594,6 @@ MaxMP:+10(+0~+30)
         updateCount();
       }
 
-      // 排序
       let sortState = { col: -1, asc: true };
       Array.from(thead.rows[0].cells).forEach((th, idx) => {
         th.addEventListener('click', () => {
@@ -69509,35 +69635,23 @@ MaxMP:+10(+0~+30)
         countLbl.textContent = `顯示 ${shown} / 共 ${total} 筆`;
       }
 
-      // 事件綁定
       q.addEventListener('input', applyTextSearchOnly);
       applyBtn.addEventListener('click', applyEquipmentFilters);
-
-      resetSearchBtn.addEventListener('click', () => {
-        q.value = '';
-        applyTextSearchOnly();
-      });
-
+      resetSearchBtn.addEventListener('click', () => { q.value = ''; applyTextSearchOnly(); });
       resetAllBtn.addEventListener('click', () => {
         q.value = '';
         jobFilters.querySelectorAll('input[type=checkbox]').forEach((cb) => (cb.checked = false));
-        lvlMin.value = '';
-        lvlMax.value = '';
-        Array.from(tbody.rows).forEach((tr) => {
-          tr.dataset.textmatch = '1';
-          tr.style.display = '';
-        });
+        lvlMin.value = ''; lvlMax.value = '';
+        Array.from(tbody.rows).forEach((tr) => { tr.dataset.textmatch = '1'; tr.style.display = ''; });
         updateCount();
       });
 
-      // NEW: 切換條件區塊顯示（搜尋/重製按鈕保持顯示）
       let filterVisible = true;
       toggleFilterBtn.addEventListener('click', () => {
         filterVisible = !filterVisible;
         filtersInner.style.display = filterVisible ? '' : 'none';
       });
 
-      // 初始化
       applyTextSearchOnly();
     })();
   </script>
